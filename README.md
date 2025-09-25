@@ -85,10 +85,13 @@ Enter Choice: 1
 # Sample REST API (Spring Boot) - 
 
 //Example - Create Batch endpoint
+
 @PostMapping("/batch")
-public Batch createBatch(@RequestBody Batch batch) {
+public Batch createBatch(@RequestBody Batch batch)
+{
     return batchRepository.save(batch);
 }
+
 
 # MongoDB Sample Document : 
 {
